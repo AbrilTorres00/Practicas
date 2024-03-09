@@ -1,0 +1,60 @@
+<!DOCTYPE html>>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abril Torres</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: bisque;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgb(27, 22, 14);/*color de las letras*/
+            text-align: center;
+        }
+        .perfil{
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            background-color:beige;
+            padding: 20px;
+            box-shadow: 0 10px 10px #f3c589;
+        }
+        .foto-perfil{
+            width: auto;
+            height: auto;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: block;
+        }
+        ul{
+            list-style-type: none;
+            padding: 0;
+        }
+    </style>
+    <div class="perfil">
+        <img src="img/foto-perfil.jpg" alt="foto de perfil" class="foto-perfil">
+        <h1 id="nombre">Nombre</h1>
+        <p id="formacion">Formacion Academica</p>
+        <h2>Gustos</h2>
+        <ul>
+            <li id="musica">Musica Favorita</li> 
+            <li id="pasatiempos">Pasatiempos</li>
+            <li id="tv">Programas de television favoritos</li>
+        </ul>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+            document.getElementById('nombre').textContent='Abril Torres';
+            document.getElementById('formacion').textContent='Secundaria';
+            document.getElementById('musica').textContent='K-pop';
+            document.getElementById('pasatiempos').textContent='Jugar videojuegos';
+            document.getElementById('tv').textContent='Series,Telenovelas,K-dramas';
+        });
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Aqui voy a poner los bootstrap-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <!--Aqui terminan los bootstrap-->
+    <link href="https://fonts.cdnfonts.com/css/althea" rel="stylesheet">          
+    <!--Aqui voy a poner las fots de las letras-->
+    <title>Restaurante Cetis menu</title>
+</head>
+<body>
+   <!--este div son los botones de la pagina index.html-->
+    <div style="margin: 24 px;">
+        <nav class="nav navbar-ligth" style="background-color: rgb(247, 222, 169);">
+            <div class="container">
+                <a class="navbar-brand" href="index.html" style="font-family: 'MADE GoodTime Grotesk', sans-serif;">Inicio</a>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-item dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria aria-expanded="false" style="font-family: 'MADE GoodTime Grotesk', sans-serif;">Unidad 1</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="perfil.html">Perfil</a><br>
+                                <a class="dropdown-item" href="calculadora.html">Calculadora</a><br>
+                                <a class="dropdown-item" href="tienda.html">Tienda</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown"> 
+                            <a class="nav-item dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: 'MADE GoodTime Grotesk', sans-serif;">Unidad 2</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="tiendapedido.html">Tienda Pedido</a><br>
+                                <a class="dropdown-item" href="json.html">Json</a><br>
+                                <a class="dropdown-item" href="tiendapedido1.html">Tienda Pedido 2</a><br>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown"> 
+                            <a class="nav-item dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family: 'MADE GoodTime Grotesk', sans-serif;">Unidad 3</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="basedatos.html">Base de Datos</a><br>
+                                <a class="dropdown-item" href="peliculas.html">Peliculas</a><br>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <h1>Menu del Restaurante</h1>
+    <style>
+        img{
+            width: 200px;
+            height: auto;
+        }
+        tabla,th, td{
+            border: 1 px solid rgb(247, 222, 169);
+            text-align: left;
+            padding: 10px;
+        }
+        table{
+            width: 80px;
+            margin: 20px;
+            border-collapse: collapse;
+            box-shadow:  0 5px 15 px beige;
+            margin-left: 50px;
+        }
+        tr:hover{
+            background-color: antiquewhite;
+        }
+        tr:nth-child(odd){
+            background-color: blanchedalmond;
+        }
+    </style>
+    <h1>Bebidas</h1>
+    <table>
+        <tr>
+            <th>Imagen</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td><img src="img/vaso-agua.jpg" alt="Un vaso con agua fresca"></td>
+            <td><p>Este es un vaso de agua fresca purificada de garrafon,se le asigna una por cliente,si desea otra mas ya tendra un costo.</p></td>
+            <td>$10</td>
+        </tr>
+        <tr>
+            <td><img src="img/vaso-cocacola.jpg" alt="Un vaso de coca-cola con hielos"></td>
+            <td><p>Este es un vaso de coca-cola con hielos.</p></td>
+            <td>$25</td>
+        </tr>
+        <tr>
+            <td><img src="img/aguas-sabores.jpg" alt="Vasos de un litro de aguas de sabores frescas con hielo"></td>
+            <td><p>Estos son vasos de aguas de sabores frescas de un litro con hielo hay de varios sabores que son:Fresa,Mango,Horchata,Jamaica,Limon y Tamarindo.</p></td>
+            <td>$30</td>
+        </tr>
+        <tr>
+            <td><img src="img/vino.jpg" alt="Botella de vino y dos copas"></td>
+            <td><p>Esta es una botella de vino tinto y se entrega con dos copas,si se requiren mas copas con gusto se las otorgara el mesero.</p></td>
+            <td>$280</td>
+        </tr>
+        <tr>
+            <td><img src="img/agua-mineral.jpg" alt="Vaso de agua mineral"></td>
+            <td><p>Este es un vaso de agua mineral,le podemos añadir hielos o a temperatura ambiente.</p></td>
+            <td>$27</td>
+        </tr>
+        <tr>
+            <td><img src="img/taza-cafe.jpg" alt="Taza de cafe caliente"></td>
+            <td><p>Esta es una taza de cafe caliente,la puede pedir con leche deslactosada o entera</p></td>
+            <td>$25</td>
+        </tr>
+    </table>
+    <h1>Desayunos</h1>
+    <table>
+        <tr>
+            <th>Imagen</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td><img src="img/waffles.jpg" alt="Waffles con nutella y fresas"></td>
+            <td><p>Este es un plato de Waffles que contiene 3 waffles,llevan nutella y fresas.</p></td>
+            <td>$70</td>
+        </tr>
+        <tr>
+            <td><img src="img/hot-cakes.jpg" alt="Hot-cakes con miel y frutos rojos"></td>
+            <td><p>Este es un plato de hot-cakes que contiene 3 hot-cakes,llevan miel y frutos rojos.</p></td>
+            <td>$50</td>
+        </tr>
+        <tr>
+            <td><img src="img/huevos-estrellados.jpg" alt="Huevos estrellados con tocino"></td>
+            <td><p>Este es un plato de huevos estrellados que contiene 2 huevos y tocino.</p></td>
+            <td>$60</td>
+        </tr>
+        <tr>
+            <td><img src="img/omelet.jpg" alt="Omelet relleno"></td>
+            <td><p>Este es un Omelet relleno de jamon y queso con tomate cherry y espinacas de complemento.</p></td>
+            <td>$65</td>
+        </tr>
+        <tr>
+            <td><img src="img/molletes.jpg" alt="Molletes"></td>
+            <td><p>Estos son unos molletes el plato contiene 3 piezas,llevas frijol,queso,pico de gallo y una salsa a un costado.</p></td>
+            <td>$80</td>
+        </tr>
+        <tr>
+            <td><img src="img/pantostado-aguacate.jpg" alt="Pan Tostado C/Aguacate y Huevo"></td>
+            <td><p>Estos son unos panes tostados con aguacate y huevo encima y tomate cherry como compañamiento extra el plato contien 2 piezas. </p></td>
+            <td>$100</td>
+        </tr>
+    </table>
+    <h1>Aperitivos</h1>
+    <table>
+        <tr>
+            <th>Imagen</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td><img src="img/aros-de-cebolla.jpg" alt="Aros de Cebolla"></td>
+            <td><p>Este es un plato de 10 piezas de aros de cebolla con catsup de acompañamiento.</p></td>
+            <td>$70</td>
+        </tr>
+        <tr>
+            <td><img src="img/dedos-queso.jpg" alt="Dedos de Queso"></td>
+            <td><p>Este es un plato de 10 piezas de dedos de queso con catsup de acompañamiento.</p></td>
+            <td>$90</td>
+        </tr>
+        <tr>
+            <td><img src="img/guacamole.jpg" alt="Guacamole"></td>
+            <td><p>Este es un plato de guacamole con totopos.</p></td>
+            <td>$80</td>
+        </tr>
+        <tr>
+            <td><img src="img/papasfritas.jpg" alt="Papas Fritas"></td>
+            <td><p>Este es una porcion de papas fritas con aderezo ranch de acompañamiento.</p></td>
+            <td>$60</td>
+        </tr>
+        <tr>
+            <td><img src="img/banderillas.jpg" alt="Banderillas"></td>
+            <td><p>Este es un plato de 3 banderillas con catsup y mostaza. </p></td>
+            <td>$80</td>
+        </tr>
+        <tr>
+            <td><img src="img/nuggets-de-pollo.jpg" alt="Nuggets de Pollo"></td>
+            <td><p>Este es un plato de 10 nuggets de pollo con aderezo ranch y catsup de acompañamiento.</p></td>
+            <td>$120</td>
+        </tr>
+    </table>
+    <h1>Comidas</h1>
+    <table>
+        <tr>
+            <th>Imagen</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td><img src="img/pasta-alfredo.jpg" alt="Pasta Alfredo"></td>
+            <td><p>Este platillo es una pasta Alfredo con pollo de acompañamiento.</p></td>
+            <td>$200</td>
+        </tr>
+        <tr>
+            <td><img src="img/hamburguesa.jpg" alt="Hamburguesa Sencilla"></td>
+            <td><p>Esta es una hamburguesa sencilla con tomate,cebolla,lechuga y queso.</p></td>
+            <td>$90</td>
+        </tr>
+        <tr>
+            <td><img src="img/hamburguesa-especial.jpg" alt="Hamburguesa Especial"></td>
+            <td><p>Esta es una hamburguesa especial con tomate,cebolla,lechuga,doble carne,huevo y extra queso.</p></td>
+            <td>$150</td>
+        </tr>
+        <tr>
+            <td><img src="img/sushi.jpg" alt="Sushi estilo California"></td>
+            <td><p>Este platillo contiene 10 piezas y es un sushi al estilo california con un poco de wasabi por un costado.</p></td>
+            <td>$200</td>
+        </tr>
+        <tr>
+            <td><img src="img/pizza.jpg" alt="Pizza de Pepperoni"></td>
+            <td><p>Esta es una pizza casera de 8 rebanadas de pepperoni,si desea se le puede agregar extra queso por un costo extra.</p></td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td><img src="img/enchiladas.jpg" alt="Enchiladas Suizas"></td>
+            <td><p>Este es un plato de enchiladas suizas con 5 piezas y con frijoles y ensalada de acompañamiento.</p></td>
+            <td>$120</td>
+        </tr>
+    </table>
+    <h1>Postres</h1>
+    <table>
+        <tr>
+            <th>Imagen</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td><img src="img/flan.jpg" alt="Flan Napolitano"></td>
+            <td><p>Esta es una deliciosa rebanada de flan napolitano con frutos rojos arriba.</p></td>
+            <td>$60</td>
+        </tr>
+        <tr>
+            <td><img src="img/carlota.jpg" alt="Carlota de Limon"></td>
+            <td><p>Esta es una  deliciosa rebanada de carlota de limon.</p></td>
+            <td>$50</td>
+        </tr>
+        <tr>
+            <td><img src="img/fresasconcrema.jpg" alt="Fresas con Crema"></td>
+            <td><p>Esta es una porcion de fresas con crema y frutos rojos.</p></td>
+            <td>$70</td>
+        </tr>
+        <tr>
+            <td><img src="img/pastel.jpg" alt="Pastel de 3 Leches"></td>
+            <td><p>Esta es una deliciosa rebanada de un pastel de 3 leches de vainilla con fresas.</p></td>
+            <td>$70</td>
+        </tr>
+        <tr>
+            <td><img src="img/pay.jpg" alt="Pay de Queso con Fresas"></td>
+            <td><p>Esta es una deliciosa rebanada de pay de queso con mermelada de fresa y fresa encima.</p></td>
+            <td>$80</td>
+        </tr>
+        <tr>
+            <td><img src="img/pastel-helado.jpg" alt="Pastel de Helado"></td>
+            <td><p>Este es un delicioso mini pastel de helado con fresas encima.</p></td>
+            <td>$70</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
